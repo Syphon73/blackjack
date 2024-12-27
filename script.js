@@ -51,7 +51,9 @@ function newGame(){
     let card2 = randomcard();
     cards = [card1,card2]
     sum = card1+card2
-    startGame();
+    if(isAlive==true && blackjack==false){
+        startGame();
+    }
 }
 
 function startGame(){
